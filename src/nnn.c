@@ -1605,7 +1605,7 @@ static char confirm_force(bool selection, bool use_trash)
 	int r = snprintf(str, 20, "%s", use_trash ? utils[UTIL_GIO_TRASH] + 4 : "rm -rf");
 
 	if (selection)
-		snprintf(str + r, 280, " %d files?", nselected);
+		snprintf(str + r, 280, " %d file(s)?", nselected);
 	else
 		snprintf(str + r, 280, " '%s'?", pdents[cur].name);
 
